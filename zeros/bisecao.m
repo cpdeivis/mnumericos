@@ -1,5 +1,3 @@
-# mnc
-Métodos Numéricos e Computacionais
 % MÉTODO DA BISEÇÃO
 % AUTOR: DEIVIS COSTA PEREIRA
 % MÉTODOS NUMÉRICOS COMPUTACIONAIS
@@ -7,7 +5,7 @@ Métodos Numéricos e Computacionais
 clear;
 clc;
 
-f = input('Insira aqui sua função top: ','s');
+f = input('Insira aqui sua função: ','s');
 a = input('Insira o valor do limite inferior A: ');
 b = input('Insira o valor do limite superior B: ');
 tol = input('Insira o valor da tolerância: ');
@@ -33,7 +31,7 @@ hold on;
 grid on;
 achou = 0;
 
-while (i < niter || intervalo > tol)
+while (i < niter && intervalo > tol)
     pm = (a+b)/2;
     fpm = subs(f, pm);
     
