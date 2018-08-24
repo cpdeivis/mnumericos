@@ -60,6 +60,7 @@ if achou == 1
     fprintf('A raiz é: %d\n', pm);
 else
     fprintf('Não foi possível achar uma solução em %i iterações\n', niter);
+    fprintf('A aproximação é: %d\n', pm);
 end
 
 return
